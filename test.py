@@ -82,3 +82,15 @@ print(pokemon)
 def hello(name):
     print("Hello " + name)
 hello(name = 'Valya')
+
+class User:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        print('po')
+
+user1 = User('Olesya', 'Vostrikova')
+user2 = User('Alexey', 'Rudnev')
+users = [user1, user2]
+for user in users:
+    print(user.first_name)
